@@ -36,6 +36,32 @@ body{
     font-size: large; /* Setting default font size */
 }
 
+nav{
+    margin: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav a:hover{
+    font-size: larger;
+}
+
+
+
 /* Styling profile card */
 .card {
     margin: 5px; /* Adding a small margin */
