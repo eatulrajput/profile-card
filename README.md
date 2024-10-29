@@ -1,4 +1,4 @@
-# Profile Card 2
+# Profile Card
 
 This is a simple HTML and CSS code to create a profile card. It includes styling for the profile picture, social media links, biography, and buttons.
 
