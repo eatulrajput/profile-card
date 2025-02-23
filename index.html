@@ -1,58 +1,55 @@
-<!DOCTYPE html> <!-- Document type declaration -->
-<html lang="en"> <!-- Language declaration -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Meta tags for document settings -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title of the document -->
     <title>Hi, I am Julie</title>
-    
-    <!-- External stylesheet link -->
-    <link rel="stylesheet" href="assets/style-1.css">
-    
-    <!-- Shortcut icon -->
-    <link rel="shortcut icon" href="assets/Images/Icon-1.ico" type="image/x-icon">
-    
-    <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/388a1f26e9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/Images/Icon-1.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #1e293b, #ff6b6b, #ff9f43);
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
 </head>
-
-<body>
-    <nav>
-        <li><a href="/index.html" target="_blank" rel="noopener noreferrer">Home</a></li>
-        <li><a href="/index-2.html" target="_blank" rel="noopener noreferrer">Design 2</a></li>
+<body class="text-white min-h-screen flex flex-col items-center justify-center">
+    <nav class="w-full bg-white shadow-md py-4 px-6 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
+        <div class="text-2xl font-semibold tracking-wide text-orange-500">Julie</div>
+        <div class="flex space-x-6">
+            <a href="/index.html" class="text-lg text-black hover:text-orange-500 transition">Home</a>
+            <a href="/index-2.html" class="text-lg text-black hover:text-orange-500 transition">Design 2</a>
+        </div>
     </nav>
-    <!-- Profile card -->
-    <div class="card">
-        <!-- Header section -->
-        <div class="header">
-            <!-- Profile picture -->
-            <div class="profile-picture">
-                <img src="/assets/Images/profile-picture-1.webp" alt="Profile Picture">
-            </div>
-            <!-- Social media links -->
-            <div class="links">
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-envelope"></i></a>
+    
+    <div class="bg-white text-black shadow-lg rounded-2xl p-8 w-11/12 md:w-1/2 flex flex-col items-center mt-20">
+        <div class="flex flex-col items-center">
+            <img src="/assets/Images/profile-picture-1.webp" alt="Profile Picture" class="w-40 h-40 rounded-full shadow-lg">
+            <div class="flex space-x-4 mt-4">
+                <a href="#" class="text-2xl text-gray-500 hover:text-black"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-2xl text-gray-500 hover:text-black"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl text-gray-500 hover:text-black"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl text-gray-500 hover:text-black"><i class="far fa-envelope"></i></a>
             </div>
         </div>
         
-        <!-- Horizontal rule -->
-        <hr class="border">
+        <hr class="my-4 w-1/2 border-gray-300">
         
-        <!-- Biography section -->
-        <div class="bio">
-            <p>👋 Hi, I'm Julie Taylor,<br>
-                👀 I'm a medical student at Harvard Medical School, Boston.<br>
-                🌱 I'm currently working as a part-time blogger.<br>
-                📫 You can email me at contact@julie.com</p>
+        <div class="text-left text-lg leading-relaxed">
+            <p>👋 Hi, I'm Julie Taylor,</p>
+            <p>👀 I'm a medical student at Harvard Medical School, Boston.</p>
+            <p>🌱 I'm currently working as a part-time blogger.</p>
+            <p>📫 You can email me at <a href="mailto:contact@julie.com" class="text-orange-500 hover:underline">contact@julie.com</a></p>
         </div>
     </div>
 </body>
-
 </html>

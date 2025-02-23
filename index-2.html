@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Mark Hilton</title>
-    <link rel="stylesheet" href="/assets/style-2.css">
-    <link rel="shortcut icon" href="/assets/Images/icon-2.ico type="image/x-icon">
+    <title>Jack Hilton</title>
     <script src="https://kit.fontawesome.com/388a1f26e9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/Images/icon-2.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+    </style>
 </head>
-
-
-<body>
-    <div class="container">
-        <div class="card">
-            <img src="assets/Images/profile-picture-2.webp" alt="Profile Picture">
-            <h1>Jack Hilton</h1>
-            <div class="bio">
-                <p><b>Works</b> at Meta</p>
-                <p><b>Founder and CEO</b> Hilton Corporations</p>
-                <p><b>Studied Computer Science and Psychology</b> at Standford University</p>
-            </div>
-            <div class="links">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+<body class="min-h-screen flex flex-col items-center justify-center">
+    <nav class="w-full bg-[#161b22] shadow-md py-4 px-6 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
+        <div class="text-xl font-semibold text-white">Jack Hilton</div>
+        <div class="flex space-x-4">
+            <a href="#" class="text-xl text-gray-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-xl text-gray-400 hover:text-white transition"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-xl text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="/index.html" class="text-xl text-gray-400 hover:text-white transition">Design 2</a>
+        </div>
+    </nav>
+    
+    <div class="bg-[#161b22] shadow-md rounded-2xl p-8 w-11/12 md:w-1/2 flex flex-col items-center mt-24 border border-gray-700">
+        <div class="flex flex-col items-center">
+            <img src="assets/Images/profile-picture-2.webp" alt="Profile Picture" class="w-40 h-40 rounded-full shadow-xl transition-transform duration-300 hover:scale-105 border border-gray-600">
+            <div class="text-center mt-4">
+                <h1 class="text-2xl font-semibold text-white">Jack Hilton</h1>
+                <p class="text-gray-400">@jackhilton</p>
             </div>
         </div>
+        
+        <hr class="my-4 w-1/2 border-gray-600">
+        
+        <div class="text-left text-lg leading-relaxed text-gray-300">
+            <p>👋 Hi, I'm Jack Hilton</p>
+            <p>💼 Works at Meta</p>
+            <p>🚀 Founder and CEO of Hilton Corporations</p>
+            <p>🎓 Studied Computer Science and Psychology at Stanford University</p>
+        </div>
     </div>
-    <div class="footer">
-        <nav>
-            <li><a href="/index-2.html" target="_blank" rel="noopener noreferrer">Home</a></li>
-            <li><a href="/index.html" target="_blank" rel="noopener noreferrer">Design 2</a></li>
-        </nav>
-        <p>Copyright &copy; 2024. All rights are reserved. Designed by <a href="https://eatulrajput.github.io" target="_blank" rel="noopener noreferrer">Atul Rajput</a><br>Images are from <a href="https://www.unsplash.com" target="_blank" rel="noopener noreferrer">unsplash.com</a></p>
-    </div>
+    
+    <footer class="w-full bg-[#161b22] py-6 text-center text-gray-400 mt-6">
+        <p>Copyright &copy; 2024. All rights reserved. Designed by <a href="https://eatulrajput.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Atul Rajput</a></p>
+        <p>Images are from <a href="https://www.unsplash.com" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Unsplash</a></p>
+    </footer>
 </body>
-
 </html>
